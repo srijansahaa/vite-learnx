@@ -1,10 +1,18 @@
-import './App.css'
+import "./App.css";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Sidebar from "./components/Sidebar";
 
 function App() {
-
   return (
-    <div className='text-3xl font-bold underline'>Hello World</div>
-  )
+    <div>
+      <Header />
+      <div className="flex">
+        <Sidebar />
+        <Main />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
